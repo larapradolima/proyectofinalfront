@@ -1,0 +1,284 @@
+.adopcion {
+  min-height: 100vh;
+  padding: 2rem 0;
+  background-image: url(https://buenosaires.gob.ar/sites/default/files/media/image/2017/07/06/12508527923dbf93c28ad38238e48201d66417a8.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.adopcion-header {
+  text-align: center;
+  padding: 2rem;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 0 auto 2rem;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.adopcion-header h1 {
+  font-family: "Homemade Apple", cursive;
+  font-size: 3rem;
+  color: #c15e3d;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.adopcion-info {
+  background-color: rgba(255, 255, 255, 0.95);
+  max-width: 900px;
+  margin: 0 auto 3rem;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.adopcion-info h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #c15e3d;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.adopcion-info p {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #555;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin: 0;
+}
+
+.adopcion .gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.adopcion .gallery-item {
+  margin: 5px;
+  border: 3px solid #831414;
+  width: 280px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.adopcion .gallery-item:hover {
+  border: 3px solid #2b0b00;
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.adopcion .gallery-item img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.adopcion .gallery-item:hover img {
+  transform: scale(1.05);
+}
+
+.adopcion .gallery-item .desc {
+  padding: 15px;
+  text-align: center;
+  background-color: #e98f68;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+  animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.modal-content img {
+  max-width: 100%;
+  max-height: 70vh;
+  object-fit: contain;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+.modal-content h3 {
+  text-align: center;
+  margin-top: 1rem;
+  font-family: "Homemade Apple", cursive;
+  color: #c15e3d;
+  font-size: 2rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: #e13419;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.modal-close:hover {
+  background-color: #b82b15;
+  transform: rotate(90deg);
+}
+
+@media (max-width: 768px) {
+  .adopcion {
+    padding: 1rem 0;
+  }
+
+  .adopcion-header {
+    margin: 0 1rem 2rem;
+    padding: 1.5rem;
+  }
+
+  .adopcion-header h1 {
+    font-size: 2.5rem;
+  }
+
+  .adopcion-info {
+    margin: 0 1rem 2rem;
+    padding: 1.5rem;
+  }
+
+  .adopcion-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .adopcion-info p {
+    font-size: 1rem;
+  }
+
+  .adopcion .gallery {
+    gap: 15px;
+    padding: 0 1rem;
+  }
+
+  .adopcion .gallery-item {
+    width: 240px;
+  }
+
+  .adopcion .gallery-item img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .adopcion {
+    background-size: contain;
+  }
+
+  .adopcion-header {
+    margin: 0 0.5rem 1.5rem;
+    padding: 1rem;
+  }
+
+  .adopcion-header h1 {
+    font-size: 2rem;
+  }
+
+  .adopcion-info {
+    margin: 0 0.5rem 1.5rem;
+    padding: 1rem;
+  }
+
+  .adopcion-info h2 {
+    font-size: 1.1rem;
+  }
+
+  .adopcion-info p {
+    font-size: 0.9rem;
+  }
+
+  .adopcion .gallery {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .adopcion .gallery-item {
+    width: 95%;
+    max-width: 350px;
+  }
+
+  .adopcion .gallery-item img {
+    height: 320px;
+  }
+
+  .modal-content {
+    padding: 1rem;
+  }
+
+  .modal-content h3 {
+    font-size: 1.5rem;
+  }
+
+  .modal-close {
+    width: 35px;
+    height: 35px;
+    font-size: 1.2rem;
+  }
+}

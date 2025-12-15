@@ -1,0 +1,20 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  background-image: url(https://w0.peakpx.com/wallpaper/80/279/HD-wallpaper-the-secret-life-of-pets-2016-max-chloe-dog-cat.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #e48160;
+}

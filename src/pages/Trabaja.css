@@ -1,0 +1,252 @@
+
+
+.trabaja {
+  min-height: 100vh;
+  padding: 2rem 0;
+  background-image: url(https://occ-0-8407-2218.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABeuVREM-Q4sWF_DnyZ2y7BxzoCB-zmLrQRGVtBM7ldtSEYDCG6YWD1Sec-UzY9_brQ9-U-idXi-i3fnN_OWD2o-VaVxCzlj74hV3.jpg?r=6a2);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  background-color: rgba(193, 94, 61, 0.9);
+  margin: 0 auto 2rem;
+  max-width: 900px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nosotros h1 {
+  font-family: "Homemade Apple", cursive;
+  font-size: 2.5rem;
+  color: white;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+
+.intro-text {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.95);
+  max-width: 900px;
+  margin: 0 auto 2rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.intro-text h2 {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: #c15e3d;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  background-color: rgba(239, 108, 64, 0.95);
+  padding: 2.5rem;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.formulario label {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #c15e3d;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #e13419;
+  box-shadow: 0 0 8px rgba(225, 52, 25, 0.3);
+  transform: scale(1.02);
+}
+
+.formulario textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+
+.error-input {
+  border-color: #ff4444 !important;
+  background-color: #ffe6e6 !important;
+}
+
+.error-message {
+  color: #ff1744;
+  font-size: 0.9rem;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+  margin-top: 0.2rem;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.enviar,
+.limpiar {
+  flex: 1;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.enviar {
+  background-color: #e13419;
+  color: white;
+}
+
+.enviar:hover {
+  background-color: #b82b15;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.enviar:active {
+  transform: translateY(0);
+}
+
+.limpiar {
+  background-color: #666;
+  color: white;
+}
+
+.limpiar:hover {
+  background-color: #444;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.limpiar:active {
+  transform: translateY(0);
+}
+
+
+@media (max-width: 768px) {
+  .trabaja {
+    padding: 1rem 0;
+  }
+
+  .nosotros {
+    margin: 0 1rem 1.5rem;
+    padding: 1.5rem;
+  }
+
+  .nosotros h1 {
+    font-size: 2rem;
+  }
+
+  .intro-text {
+    margin: 0 1rem 1.5rem;
+    padding: 1rem;
+  }
+
+  .intro-text h2 {
+    font-size: 1.3rem;
+  }
+
+  .formulario {
+    margin: 0 1rem;
+    padding: 2rem;
+  }
+
+  .button-group {
+    flex-direction: column;
+  }
+
+  .enviar,
+  .limpiar {
+    width: 100%;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .trabaja {
+    background-size: contain;
+  }
+
+  .nosotros {
+    margin: 0 0.5rem 1rem;
+    padding: 1rem;
+  }
+
+  .nosotros h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro-text {
+    margin: 0 0.5rem 1rem;
+    padding: 1rem;
+  }
+
+  .intro-text h2 {
+    font-size: 1.1rem;
+  }
+
+  .formulario {
+    margin: 0 0.5rem;
+    padding: 1.5rem;
+    gap: 1.2rem;
+  }
+
+  .formulario label {
+    font-size: 1rem;
+  }
+
+  .formulario input,
+  .formulario textarea {
+    padding: 0.7rem;
+    font-size: 0.95rem;
+  }
+
+  .enviar,
+  .limpiar {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,30 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+  padding: 20px 0;
+  font-family: sans-serif;
+  flex-wrap: wrap;
+  border-top: 2px solid #ccc;
+}
+
+.footer-section {
+  text-align: center;
+  margin: 10px;
+}
+
+.footer-section h4 {
+  margin-bottom: 5px;
+  font-size: 1.1em;
+}
+
+.footer-section p {
+  margin: 0;
+  font-size: 0.95em;
+}
+
+.card-logo {
+  width: 50px;
+  margin: 5px;
+  vertical-align: middle;
+}
