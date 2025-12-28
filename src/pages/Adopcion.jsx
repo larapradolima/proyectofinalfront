@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Adopcion.css';
+import { Link } from 'react-router-dom'
 
 
 // Importaciones de imágenes

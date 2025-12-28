@@ -1,5 +1,6 @@
 import React from 'react';
 import './Home.css';
+import { Link } from 'react-router-dom'
 
 import descuentosImage from '../assets/img/descuentos.jpg';
 import accesoriosImage from '../assets/img/accesorios2.jpg';

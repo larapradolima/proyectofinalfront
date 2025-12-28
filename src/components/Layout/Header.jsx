@@ -1,19 +1,21 @@
 import './Header.css'
+import { Link } from 'react-router-dom'
 
-function Header({ onNavigate }) {
+function Header() {
   return (
     <header>
       <div className="titulo">
-        <h1>¡Bienvenidos a My Happy Pet Friend</h1>
+        <h1>¡Bienvenidos a My Happy Pet Friend!</h1>
       </div>
+
       <nav>
         <ol className="listas">
-          <li><a onClick={() => onNavigate('home')}>Inicio</a></li>
-          <li><a onClick={() => onNavigate('perros')}>Perros</a></li>
-          <li><a onClick={() => onNavigate('gatos')}>Gatos</a></li>
-          <li><a onClick={() => onNavigate('aves')}>Aves</a></li>
-          <li><a onClick={() => onNavigate('adopcion')}>Centro de adopción</a></li>
-          <li><a onClick={() => onNavigate('trabaja')}>Trabaja con nosotros</a></li>
+          <li><Link to="/">Inicio</Link></li>
+          <li><Link to="/perros">Perros</Link></li>
+          <li><Link to="/gatos">Gatos</Link></li>
+          <li><Link to="/aves">Aves</Link></li>
+          <li><Link to="/adopcion">Centro de adopción</Link></li>
+          <li><Link to="/trabaja">Trabajá con nosotros</Link></li>
         </ol>
       </nav>
     </header>

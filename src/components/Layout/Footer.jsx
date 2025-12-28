@@ -18,7 +18,7 @@ function Footer () {
           className="card-logo"
         />
         <img
-          src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA..."
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb8rt8iXdjEvaMmZ8Q0s72wWDFAB_vpWhmCA&s"
           alt="Mastercard"
           className="card-logo"
         />
